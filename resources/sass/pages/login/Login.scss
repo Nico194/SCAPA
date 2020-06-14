@@ -1,0 +1,51 @@
+.p-login {
+    @include without-distance-between-header-footer;
+    background-image: url('../../../img/auth-background.jpg');
+    background-repeat: repeat;
+
+    &>.container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__card {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 700px;
+        background-color: $white-color;
+        border-radius: 5px;
+
+        @media only screen and (media-width('max', $md-screen)) {
+            width: 100%;
+        }
+
+        h3 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            margin-bottom: 0;
+
+            @media only screen and (media-width('max', $md-screen)) {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+
+        &-form {
+            margin-bottom: 40px;
+
+            @media only screen and (media-width('max', $md-screen)) {
+                margin-bottom: 20px;
+            }
+
+            &-buttons {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 40px;
+
+                .btn {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

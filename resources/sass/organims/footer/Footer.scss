@@ -1,0 +1,35 @@
+.o-footer {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 70px;
+    background-color: $primary-color;
+
+    &__presentation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 26px;
+
+        &-icon {
+            margin-right: 30px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-name {
+            color: $white-color;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+
+}

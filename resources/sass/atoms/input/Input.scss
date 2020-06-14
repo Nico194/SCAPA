@@ -1,0 +1,67 @@
+.form {
+    &__group {
+        width: 100%;
+        background: transparent;
+        margin-bottom: 20px;
+
+        &--datepicker {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+
+    &__label {
+        @include text-styles('content');
+        transition: all 0.5s;
+
+        &--focus {
+            font-size: 22px;
+            color: $primary-color;
+        }
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        border: 2px solid $black-color-70;
+        border-radius: 5px;
+        transition: color 0.5s;
+
+
+        svg {
+            margin-right: 10px;
+            color: $black-color-70;
+            transition: color 0.5s;
+        }
+
+        input {
+            width: 100%;
+            border: 0;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &--focus {
+            border-color: $primary-color;
+
+            svg {
+                color: $primary-color;
+            }
+        }
+
+        &--datepicker {
+            margin-left: 20px;
+            width: 72%;
+
+            span {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.p-home {
+    @include without-distance-between-header();
+
+    &__img {
+        @include aspect-ratio(4, 3);
+
+        .aspect-ratio-content {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__description {
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+}

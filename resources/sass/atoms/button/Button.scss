@@ -1,0 +1,90 @@
+.btn {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    &.right {
+        svg {
+            margin-left: 10px;
+        }
+    }
+
+    &.left {
+        svg {
+            margin-right: 10px;
+        }
+    }
+
+    &-primary {
+        @include text-styles('content');
+        background-color: $primary-color;
+        border: 2px solid $primary-color;
+
+        &:hover {
+            background-color: $primary-hover-color;
+            border: 2px solid $primary-hover-color;
+        }
+    }
+
+    &-outline {
+        @include text-styles('content');
+        background-color: $white-color;
+        border: 2px solid $primary-color;
+        color: $primary-color;
+
+        &:hover {
+            background-color: $primary-hover-color;
+            border: 2px solid $primary-hover-color;
+            color: $white-color;
+        }
+    }
+
+    &-success {
+        @include text-styles('content');
+        background-color: $success-color;
+        border: 2px solid $success-color;
+        color: $white-color;
+
+        &:hover {
+            background-color: $success-hover-color;
+            border: 2px solid $success-hover-color;
+        }
+    }
+
+    &-danger {
+        @include text-styles('content');
+        background-color: $danger-color;
+        border: 2px solid $danger-color;
+        color: $white-color;
+
+        &:hover {
+            background-color: $danger-hover-color;
+            border: 2px solid $danger-hover-color;
+        }
+    }
+
+    &-warning {
+        @include text-styles('content');
+        background-color: $warning-color;
+        border: 2px solid $warning-color;
+        color: $white-color;
+
+        &:hover {
+            background-color: $warning-hover-color;
+            border: 2px solid $warning-hover-color;
+            color: $white-color;
+        }
+    }
+    
+    &-disable {
+        @include text-styles('content');
+        background-color: $disable-color;
+        border: 2px solid $disable-color;
+        color: $white-color;
+
+        &:hover {
+            color: $white-color;
+        }
+    }
+}

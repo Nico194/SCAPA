@@ -1,0 +1,15 @@
+.a-link {
+    @include text-styles('content');
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 2px;
+    color: $white-color;
+    transition: all 500ms;
+
+    &:hover {
+        color: $white-color;
+        background-color: $black-color-10;
+    }
+}

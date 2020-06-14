@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'ComicNeueBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/ComicNeue-Bold.ttf'), local('☺');
+}
+
+@font-face {
+    font-family: 'ComicNeueBoldItalic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/ComicNeue-BoldItalic.ttf'), local('☺');
+}
+
+@font-face {
+    font-family: 'ComicNeueItalic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/ComicNeue-Italic.ttf'), local('☺');
+}
+
+@font-face {
+    font-family: 'ComicNeueLight';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/ComicNeue-Light.ttf'), local('☺');
+}
+
+@font-face {
+    font-family: 'ComicNeueLightItalic';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/ComicNeue-LightItalic.ttf'), local('☺');
+}
+
+@font-face {
+    font-family: 'ComicNeueRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/ComicNeue-Regular.ttf'), local('☺');
+}
+
+h1 {
+    @include text-styles('h1');
+}
+
+h2 {
+    @include text-styles('h2');
+}
+
+h3 {
+    @include text-styles('h3');
+}
+
+h4 {
+    @include text-styles('h4');
+}
+
+h5 {
+    @include text-styles('h5');
+}
+
+h6 {
+    @include text-styles('h6');
+}
+
+a {
+    font-family: $regular-font;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+
+
+
+
